@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="types\window.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
+    <ClCompile Include="types\eventhandler.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="sdl2paintmain.h" />
+    <ClInclude Include="types\window.h">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="base\consts.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\enums.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\macros.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sdlhelper.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="types\eventhandler.h">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="types\interfaces\irenderable.h">
+      <Filter>types\interfaces</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="types">
+      <UniqueIdentifier>{519e0df9-dafc-4239-a549-9606228fe95b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{e670643d-300d-4f03-ac7b-e7d48ee80aa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="types\interfaces">
+      <UniqueIdentifier>{fbad4091-129a-4de2-8b1c-b04fbe77d7e7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

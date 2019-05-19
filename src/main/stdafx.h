@@ -1,0 +1,6 @@
+#ifndef __SDL2_PAINT_MAIN_PRECOMPILED_HEADER__
+#define __SDL2_PAINT_MAIN_PRECOMPILED_HEADER__
+
+#include "sdl2paintmain.h"
+
+#endif // __SDL2_PAINT_MAIN_PRECOMPILED_HEADER__
