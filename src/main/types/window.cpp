@@ -79,7 +79,7 @@ void Window::Close()
     SDL_Quit();
 }
 
-bool Window::Render( uint8_t aAlpha )
+bool Window::Render()
 {
     int lRenderDrawColorResult = SDL_SetRenderDrawColor( mRenderer, 0xFF, 0xFF, 0xFF, 0xFF );
     if( IS_FAIL( lRenderDrawColorResult ) )

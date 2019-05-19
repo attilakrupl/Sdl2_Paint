@@ -15,7 +15,7 @@ namespace Sdl2Paint::Window
 
     public:
         bool LoadMedia();
-        bool Render( uint8_t aAlpha ) override;
+        bool Render() override;
 
     private:
         SDL_Renderer* mRenderer;

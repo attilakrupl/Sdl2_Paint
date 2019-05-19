@@ -8,6 +8,6 @@ namespace Sdl2Paint::Window
         virtual ~iRenderable() = default;
 
     public:
-        virtual bool Render( uint8_t aAlpha ) = 0;
+        virtual bool Render() = 0;
     };
 }

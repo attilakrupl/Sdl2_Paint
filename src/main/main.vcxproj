@@ -86,6 +86,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="types\backgroundtexture.cpp" />
     <ClCompile Include="types\eventhandler.cpp" />
     <ClCompile Include="types\window.cpp" />
   </ItemGroup>
@@ -96,7 +97,10 @@
     <ClInclude Include="base\sdlhelper.h" />
     <ClInclude Include="sdl2paintmain.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="types\backgroundtexture.h" />
+    <ClInclude Include="types\common\event.h" />
     <ClInclude Include="types\eventhandler.h" />
+    <ClInclude Include="types\interfaces\ieventargument.h" />
     <ClInclude Include="types\interfaces\irenderable.h" />
     <ClInclude Include="types\window.h" />
   </ItemGroup>

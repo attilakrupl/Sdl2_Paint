@@ -9,6 +9,9 @@
     <ClCompile Include="types\eventhandler.cpp">
       <Filter>types</Filter>
     </ClCompile>
+    <ClCompile Include="types\backgroundtexture.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -34,6 +37,15 @@
     <ClInclude Include="types\interfaces\irenderable.h">
       <Filter>types\interfaces</Filter>
     </ClInclude>
+    <ClInclude Include="types\backgroundtexture.h">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="types\interfaces\ieventargument.h">
+      <Filter>types\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="types\common\event.h">
+      <Filter>types\common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="types">
@@ -44,6 +56,9 @@
     </Filter>
     <Filter Include="types\interfaces">
       <UniqueIdentifier>{fbad4091-129a-4de2-8b1c-b04fbe77d7e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="types\common">
+      <UniqueIdentifier>{56a9cb56-e920-4a23-a8cb-1924a4e9bcfa}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -8,11 +8,6 @@ int main( int argc, char** argv )
         printf( "Failed to initialize!\n" );
         return -1;
     }
-    if( IS_NOT( lWindow.LoadMedia() ) )
-    {
-        printf( "Failed to load media!\n" );
-        return -1;
-    }
 
     Sdl2Paint::Window::EventHandler lEventHandler( &lWindow );
     if( IS_NOT( lEventHandler.RunEventLoop() ) )
@@ -21,6 +16,7 @@ int main( int argc, char** argv )
         return -1;
     }
 
+    lWindow.Close();
 
     return 0;
 }
