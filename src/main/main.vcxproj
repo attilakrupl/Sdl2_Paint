@@ -99,6 +99,7 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="types\backgroundtexture.h" />
     <ClInclude Include="types\common\event.h" />
+    <ClInclude Include="types\common\eventcontainer.h" />
     <ClInclude Include="types\eventhandler.h" />
     <ClInclude Include="types\interfaces\ieventargument.h" />
     <ClInclude Include="types\interfaces\irenderable.h" />

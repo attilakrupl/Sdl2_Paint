@@ -46,6 +46,9 @@
     <ClInclude Include="types\common\event.h">
       <Filter>types\common</Filter>
     </ClInclude>
+    <ClInclude Include="types\common\eventcontainer.h">
+      <Filter>types\common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="types">

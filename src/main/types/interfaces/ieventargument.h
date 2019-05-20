@@ -6,8 +6,6 @@ namespace Sdl2Paint
     {
     public:
         virtual ~iEventArgument() = default;
-
-
     };
 
 }
