@@ -12,6 +12,9 @@
     <ClCompile Include="types\backgroundtexture.cpp">
       <Filter>types</Filter>
     </ClCompile>
+    <ClCompile Include="eventsystem\event.cpp">
+      <Filter>eventsystem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -43,11 +46,17 @@
     <ClInclude Include="types\interfaces\ieventargument.h">
       <Filter>types\interfaces</Filter>
     </ClInclude>
-    <ClInclude Include="types\common\event.h">
-      <Filter>types\common</Filter>
+    <ClInclude Include="eventsystem\containers\uieventcontainer.h">
+      <Filter>eventsystem\containers</Filter>
     </ClInclude>
-    <ClInclude Include="types\common\eventcontainer.h">
-      <Filter>types\common</Filter>
+    <ClInclude Include="eventsystem\event.h">
+      <Filter>eventsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="eventsystem\eventcallbackhandler.h">
+      <Filter>eventsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="eventsystem\ieventargument.h">
+      <Filter>eventsystem</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -60,8 +69,11 @@
     <Filter Include="types\interfaces">
       <UniqueIdentifier>{fbad4091-129a-4de2-8b1c-b04fbe77d7e7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="types\common">
+    <Filter Include="eventsystem">
       <UniqueIdentifier>{56a9cb56-e920-4a23-a8cb-1924a4e9bcfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="eventsystem\containers">
+      <UniqueIdentifier>{18130974-f3dc-42a5-8cb7-927c9a0dfabf}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -14,13 +14,14 @@
 
 // Interfaces
 
-#include "types/interfaces/ieventargument.h"
 #include "types/interfaces/irenderable.h"
 
-// Common
+// Event system
 
-#include "types/common/event.h"
-#include "types/common/eventcontainer.h"
+#include "eventsystem/ieventargument.h"
+#include "eventsystem/event.h"
+#include "eventsystem/eventcallbackhandler.h"
+#include "eventsystem/containers/uieventcontainer.h"
 
 // 
 
