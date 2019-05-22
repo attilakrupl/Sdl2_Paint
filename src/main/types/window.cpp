@@ -3,9 +3,16 @@
 using namespace Sdl2Paint::Window;
 
 Window::Window()
-    : mRenderer( nullptr )
-    , mWindow  ( nullptr )
+    : mRenderer        ( nullptr              )
+    , mWindow          ( nullptr              )
+    , mUiEventContainer( new UiEventContainer )
 {}
+
+Window::~Window()
+{
+    delete mUiEventContainer;
+    mUiEventContainer = nullptr;
+}
 
 bool Window::OnInitialize()
 {
@@ -47,17 +54,13 @@ bool Window::OnInitialize()
         PRINT_WARNING( SDL_GetError() );
     }
 
-    //int imgFlags = IMG_INIT_PNG;
-    //if( IS_NOT( IMG_Init( imgFlags ) & imgFlags ) )
-    //{
-    //    PRINT_ERROR( IMG_GetError() );
-    //    return false;
-    //}
     return true;
 }
 
 bool Window::OnDeinitialize()
 {
+    SDL_Quit();
+
     return true;
 }
 

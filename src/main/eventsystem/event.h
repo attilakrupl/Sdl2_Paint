@@ -4,6 +4,25 @@ namespace Sdl2Paint
 {
     class Event
     {
+    private:
+        using EventList = std::list<EventCallbackHandler*>;
+
+    private:
+        bool      mIsInInvoke;
+        EventList mEvents;
+        EventList mDeleteEvents;
+        EventList mAddEvents;
+
+    private:
+        Event           ( const Event&  ) = delete;
+        Event& operator=( const Event&  ) = delete;
+        Event           ( const Event&& ) = delete;
+        Event& operator=(       Event&& ) = delete;
+
+    public:
+        Event();
+        virtual ~Event();
+
     public:
         inline bool Invoke( const iEventArgument* const aEventArgument );
 
@@ -14,7 +33,7 @@ namespace Sdl2Paint
         inline bool Unregister( TYPEEVENTHANDLER* const aObserver, const bool ( TYPEEVENTHANDLER::*aCallback )( const iEventArgument* const ) );
     };
 
-    bool Sdl2Paint::Event::Invoke( const iEventArgument * const aEventArgument )
+    inline bool Event::Invoke( const iEventArgument * const aEventArgument )
     {
         return false;
     }

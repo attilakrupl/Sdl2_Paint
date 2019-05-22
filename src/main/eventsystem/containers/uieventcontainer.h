@@ -2,11 +2,11 @@
 
 namespace Sdl2Paint
 {
-    class EventContainer
+    class UiEventContainer
     {
     public:
-        EventContainer() = default;
-        virtual ~EventContainer() = default;
+        UiEventContainer() = default;
+        virtual ~UiEventContainer() = default;
 
     public:
         Event EventMouseMove;

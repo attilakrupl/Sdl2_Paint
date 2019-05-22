@@ -75,5 +75,8 @@
     <Filter Include="eventsystem\containers">
       <UniqueIdentifier>{18130974-f3dc-42a5-8cb7-927c9a0dfabf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="eventsystem\eventarguments">
+      <UniqueIdentifier>{54a3b637-5863-4df7-996b-bb69389f1a40}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

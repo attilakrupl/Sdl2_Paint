@@ -6,7 +6,7 @@ namespace Sdl2Paint::Window
     {
     public:
         Window();
-        virtual ~Window() = default;
+        virtual ~Window();
 
     public:
         bool OnInitialize();
@@ -20,5 +20,7 @@ namespace Sdl2Paint::Window
     private:
         SDL_Renderer* mRenderer;
         SDL_Window*   mWindow;
+
+        UiEventContainer* mUiEventContainer;
     };
 }

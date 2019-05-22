@@ -1,5 +1,9 @@
 #pragma once
 
+// STD
+
+#include <list>
+
 // SDL2
 
 #include <SDL.h>
@@ -18,9 +22,9 @@
 
 // Event system
 
+#include "eventsystem/eventcallbackhandler.h"
 #include "eventsystem/ieventargument.h"
 #include "eventsystem/event.h"
-#include "eventsystem/eventcallbackhandler.h"
 #include "eventsystem/containers/uieventcontainer.h"
 
 // 
