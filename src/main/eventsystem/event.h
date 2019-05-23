@@ -33,11 +33,6 @@ namespace Sdl2Paint
         inline bool Unregister( TYPEEVENTHANDLER* const aObserver, const bool ( TYPEEVENTHANDLER::*aCallback )( const iEventArgument* const ) );
     };
 
-    inline bool Event::Invoke( const iEventArgument * const aEventArgument )
-    {
-        return false;
-    }
-
     template<typename TYPEEVENTHANDLER>
     inline bool Event::Register( TYPEEVENTHANDLER * const aObserver, const bool( TYPEEVENTHANDLER::* aCallback )( const iEventArgument * const ) )
     {

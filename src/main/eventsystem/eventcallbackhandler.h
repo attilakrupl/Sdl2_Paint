@@ -1,6 +1,10 @@
 #pragma once
 
-class EventCallbackHandler
+namespace Sdl2Paint
 {
-
-};
+    class EventCallbackHandler
+    {
+    public:
+        const bool Call( const iEventArgument* aEventArgument );
+    };
+}
