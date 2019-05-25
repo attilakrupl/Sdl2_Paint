@@ -1,11 +1,11 @@
 #include "stdafx.h"
 
-using namespace Sdl2Paint::Window;
+using namespace nSdl2Paint::nWindow;
 
 BackgroundTexture::BackgroundTexture()
 {}
 
-bool Sdl2Paint::Window::BackgroundTexture::Render()
+bool nSdl2Paint::Window::BackgroundTexture::Render()
 {
 
 

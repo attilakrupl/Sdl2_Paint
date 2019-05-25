@@ -1,6 +1,6 @@
 #pragma once
 
-namespace Sdl2Paint::Window
+namespace nSdl2Paint::nWindow
 {
     class BackgroundTexture : public iRenderable
     {

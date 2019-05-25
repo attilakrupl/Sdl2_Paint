@@ -1,6 +1,6 @@
 #include "stdafx.h"
 
-using namespace Sdl2Paint::Window;
+using namespace nSdl2Paint::nWindow;
 
 static Uint8 gColorComponentMAX   = 255;
 static Uint8 gGREENMAX = 255;

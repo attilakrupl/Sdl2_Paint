@@ -1,6 +1,6 @@
 #include "stdafx.h"
 
-using namespace Sdl2Paint::Window;
+using namespace nSdl2Paint::nWindow;
 
 Window::Window()
     : mRenderer        ( nullptr              )

@@ -1,6 +1,6 @@
 #pragma once
 
-namespace Sdl2Paint
+namespace nSdl2Paint
 {
     class Event
     {
@@ -19,6 +19,9 @@ namespace Sdl2Paint
         Event           ( const Event&& ) = delete;
         Event& operator=(       Event&& ) = delete;
 
+    private:
+        void UnregisterVoid( void* const aObserver, void* const aCallback );
+
     public:
         Event();
         virtual ~Event();
@@ -27,21 +30,22 @@ namespace Sdl2Paint
         inline bool Invoke( const iEventArgument* const aEventArgument );
 
         template <typename TYPEEVENTHANDLER>
-        inline bool Register( TYPEEVENTHANDLER* const aObserver, const bool ( TYPEEVENTHANDLER::*aCallback )( const iEventArgument* const ) );
+        inline void Register( TYPEEVENTHANDLER* const aObserver, const bool ( TYPEEVENTHANDLER::*aCallback )( const iEventArgument* const ) );
 
         template <typename TYPEEVENTHANDLER>
-        inline bool Unregister( TYPEEVENTHANDLER* const aObserver, const bool ( TYPEEVENTHANDLER::*aCallback )( const iEventArgument* const ) );
+        inline void Unregister( TYPEEVENTHANDLER* const aObserver, const bool ( TYPEEVENTHANDLER::*aCallback )( const iEventArgument* const ) );
     };
 
     template<typename TYPEEVENTHANDLER>
-    inline bool Event::Register( TYPEEVENTHANDLER * const aObserver, const bool( TYPEEVENTHANDLER::* aCallback )( const iEventArgument * const ) )
+    inline void Event::Register( TYPEEVENTHANDLER* const aObserver, const bool( TYPEEVENTHANDLER::*aCallback )( const iEventArgument * const ) )
     {
-        return false;
+        EventCallbackHandler<TYPEEVENTHANDLER>* const lEventData = new EventCallbackHandler<TYPEEVENTHANDLER>( aObserver, aCallback );
+        mEvents.push_back( lEventData );
     }
 
     template<typename TYPEEVENTHANDLER>
-    inline bool Event::Unregister( TYPEEVENTHANDLER * const aObserver, const bool( TYPEEVENTHANDLER::* aCallback )( const iEventArgument * const ) )
+    inline void Event::Unregister( TYPEEVENTHANDLER * const aObserver, const bool( TYPEEVENTHANDLER::*aCallback )( const iEventArgument * const ) )
     {
-        return false;
+        UnregisterVoid( aObserver, &aCallback );
     }
 }

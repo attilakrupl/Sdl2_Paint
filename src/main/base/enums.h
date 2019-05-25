@@ -1,4 +1,4 @@
-namespace Sdl2Paint::Window
+namespace nSdl2Paint::nWindow
 {
     enum class KeyPressSurfaces
     {

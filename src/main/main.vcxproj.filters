@@ -15,6 +15,9 @@
     <ClCompile Include="eventsystem\event.cpp">
       <Filter>eventsystem</Filter>
     </ClCompile>
+    <ClCompile Include="eventsystem\eventcallbackhandler.cpp">
+      <Filter>eventsystem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />

@@ -1,6 +1,6 @@
 #pragma once
 
-namespace Sdl2Paint
+namespace nSdl2Paint
 {
     class EventCallbackHandler
     {
