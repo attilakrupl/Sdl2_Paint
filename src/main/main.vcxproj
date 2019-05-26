@@ -100,7 +100,8 @@
     <ClInclude Include="eventsystem\containers\uieventcontainer.h" />
     <ClInclude Include="eventsystem\event.h" />
     <ClInclude Include="eventsystem\eventcallbackhandler.h" />
-    <ClInclude Include="eventsystem\ieventargument.h" />
+    <ClInclude Include="eventsystem\interfaces\ieventargument.h" />
+    <ClInclude Include="eventsystem\interfaces\ieventcallbackhandler.h" />
     <ClInclude Include="sdl2paintmain.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="types\backgroundtexture.h" />

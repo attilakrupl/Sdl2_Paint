@@ -58,8 +58,11 @@
     <ClInclude Include="eventsystem\eventcallbackhandler.h">
       <Filter>eventsystem</Filter>
     </ClInclude>
-    <ClInclude Include="eventsystem\ieventargument.h">
-      <Filter>eventsystem</Filter>
+    <ClInclude Include="eventsystem\interfaces\ieventcallbackhandler.h">
+      <Filter>eventsystem\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="eventsystem\interfaces\ieventargument.h">
+      <Filter>eventsystem\interfaces</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +83,9 @@
     </Filter>
     <Filter Include="eventsystem\eventarguments">
       <UniqueIdentifier>{54a3b637-5863-4df7-996b-bb69389f1a40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="eventsystem\interfaces">
+      <UniqueIdentifier>{a99e4fbd-448a-4fe7-9802-92c249e5a832}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

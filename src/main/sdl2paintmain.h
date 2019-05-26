@@ -22,7 +22,8 @@
 
 // Event system
 
-#include "eventsystem/ieventargument.h"
+#include "eventsystem/interfaces/ieventcallbackhandler.h"
+#include "eventsystem/interfaces/ieventargument.h"
 #include "eventsystem/eventcallbackhandler.h"
 #include "eventsystem/event.h"
 #include "eventsystem/containers/uieventcontainer.h"

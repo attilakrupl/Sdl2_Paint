@@ -5,9 +5,8 @@ using namespace nSdl2Paint::nWindow;
 BackgroundTexture::BackgroundTexture()
 {}
 
-bool nSdl2Paint::Window::BackgroundTexture::Render()
+bool nSdl2Paint::nWindow::BackgroundTexture::Render()
 {
-
 
     return false;
 }

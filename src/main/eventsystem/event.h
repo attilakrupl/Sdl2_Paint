@@ -5,7 +5,7 @@ namespace nSdl2Paint
     class Event
     {
     private:
-        using EventList = std::list<EventCallbackHandler*>;
+        using EventList = std::list<iEventCallbackHandler*>;
 
     private:
         bool      mIsInInvoke;

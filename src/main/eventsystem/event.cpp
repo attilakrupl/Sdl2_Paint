@@ -11,7 +11,7 @@ Event::Event()
 
 Event::~Event()
 {
-    for( EventCallbackHandler* lHandler : mEvents )
+    for( iEventCallbackHandler* lHandler : mEvents )
     {
         delete lHandler;
         lHandler = nullptr;
@@ -29,7 +29,7 @@ inline bool nSdl2Paint::Event::Invoke( const iEventArgument * const aEventArgume
         return true;
     }
 
-    for( EventCallbackHandler* const lHandler : mEvents )
+    for( iEventCallbackHandler* const lHandler : mEvents )
     {
         const bool lCallResult = lHandler->Call( aEventArgument );
         if ( IS_NOT( lCallResult ) )
