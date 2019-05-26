@@ -3,13 +3,13 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <IncludePath>..\..\resources;C:\SDL2\SDL2_mixer\include;C:\SDL2\SDL2\include;C:\SDL2\SDL2_image\include;$(IncludePath)</IncludePath>
+    <IncludePath>..\..\resources;C:\SDL2\SDL2_mixer\include;C:\SDL2\SDL2\include;C:\SDL2\SDL2_image\include;C:\SDL2\SDL2_ttf\include;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)..\bin\$(Configuration)\$(PlatformTarget)\$(ProjectName)\</OutDir>
     <IntDir>$(SolutionDir)..\bin\$(Configuration)\$(PlatformTarget)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
@@ -20,8 +20,10 @@ copy /Y "C:\SDL2\SDL2_image\lib\$(PlatformTarget)\libpng16-16.dll" "$(SolutionDi
 copy /Y "C:\SDL2\SDL2_image\lib\$(PlatformTarget)\libjpeg-9.dll" "$(SolutionDir)..\bin\$(Configuration)\$(PlatformTarget)\$(ProjectName)\libjpeg-9.dll"
 copy /Y "C:\SDL2\SDL2_image\lib\$(PlatformTarget)\libtiff-5.dll" "$(SolutionDir)..\bin\$(Configuration)\$(PlatformTarget)\$(ProjectName)\libtiff-5.dll"
 copy /Y "C:\SDL2\SDL2_image\lib\$(PlatformTarget)\libwebp-7.dll" "$(SolutionDir)..\bin\$(Configuration)\$(PlatformTarget)\$(ProjectName)\libwebp-7.dll"
-copy /Y "C:\SDL2\SDL2_image\lib\$(PlatformTarget)\zlib1.dll" "$(SolutionDir)..\bin\$(Configuration)\$(PlatformTarget)\$(ProjectName)\zlib1.dll"</Command>
-      <Message>Copy  SDL2, SDL2_image dlls  to "$(SolutionDir)..\bin\$(Configuration)\$(PlatformTarget)\$(ProjectName)"</Message>
+copy /Y "C:\SDL2\SDL2_image\lib\$(PlatformTarget)\zlib1.dll" "$(SolutionDir)..\bin\$(Configuration)\$(PlatformTarget)\$(ProjectName)\zlib1.dll"
+copy /Y "C:\SDL2\SDL2_ttf\lib\$(PlatformTarget)\sdl2_ttf.dll" "$(SolutionDir)..\bin\$(Configuration)\$(PlatformTarget)\$(ProjectName)\sdl2_ttf.dll"
+copy /Y "C:\SDL2\SDL2_ttf\lib\$(PlatformTarget)\libfreetype-6.dll" "$(SolutionDir)..\bin\$(Configuration)\$(PlatformTarget)\$(ProjectName)\libfreetype-6.dll"</Command>
+      <Message>Copy  SDL2, SDL2_image, SDL2_ttf dlls  to "$(SolutionDir)..\bin\$(Configuration)\$(PlatformTarget)\$(ProjectName)"</Message>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>

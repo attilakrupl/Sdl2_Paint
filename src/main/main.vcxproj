@@ -81,6 +81,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="customwidgets\label\label.cpp" />
     <ClCompile Include="eventsystem\event.cpp" />
     <ClCompile Include="eventsystem\eventcallbackhandler.cpp" />
     <ClCompile Include="main.cpp" />
@@ -88,28 +89,29 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="types\backgroundtexture.cpp" />
-    <ClCompile Include="types\eventhandler.cpp" />
-    <ClCompile Include="types\window.cpp" />
+    <ClCompile Include="window\backgroundtexture.cpp" />
+    <ClCompile Include="window\eventhandler.cpp" />
+    <ClCompile Include="window\window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="base\consts.h" />
     <ClInclude Include="base\enums.h" />
     <ClInclude Include="base\macros.h" />
     <ClInclude Include="base\sdlhelper.h" />
+    <ClInclude Include="customwidgets\label\label.h" />
     <ClInclude Include="eventsystem\event.h" />
     <ClInclude Include="eventsystem\eventcallbackhandler.h" />
     <ClInclude Include="eventsystem\interfaces\ieventargument.h" />
     <ClInclude Include="eventsystem\interfaces\ieventcallbackhandler.h" />
     <ClInclude Include="sdl2paintmain.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="types\backgroundtexture.h" />
-    <ClInclude Include="types\eventhandler.h" />
-    <ClInclude Include="types\events\eventarguments\pointeventargument.h" />
-    <ClInclude Include="types\events\uieventcontainer.h" />
-    <ClInclude Include="types\interfaces\irenderable.h" />
-    <ClInclude Include="types\interfaces\iuicomponent.h" />
-    <ClInclude Include="types\window.h" />
+    <ClInclude Include="window\backgroundtexture.h" />
+    <ClInclude Include="window\eventhandler.h" />
+    <ClInclude Include="window\events\eventarguments\pointeventargument.h" />
+    <ClInclude Include="window\events\uieventcontainer.h" />
+    <ClInclude Include="window\interfaces\irenderable.h" />
+    <ClInclude Include="window\interfaces\iuicomponent.h" />
+    <ClInclude Include="window\window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

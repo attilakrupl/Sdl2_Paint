@@ -25,14 +25,18 @@
 #include "eventsystem/eventcallbackhandler.h"
 #include "eventsystem/event.h"
 
+// Custom widgets
+
+#include "customwidgets/label/label.h"
+
 // Window Includes
 
-#include "types/events/eventarguments/pointeventargument.h"
-#include "types/events/uieventcontainer.h"
+#include "window/events/eventarguments/pointeventargument.h"
+#include "window/events/uieventcontainer.h"
 
-#include "types/interfaces/irenderable.h"
-#include "types/interfaces/iuicomponent.h"
+#include "window/interfaces/irenderable.h"
+#include "window/interfaces/iuicomponent.h"
 
-#include "types/backgroundtexture.h"
-#include "types/eventhandler.h"
-#include "types/window.h"
+#include "window/backgroundtexture.h"
+#include "window/eventhandler.h"
+#include "window/window.h"
