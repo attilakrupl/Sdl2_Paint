@@ -5,14 +5,14 @@ namespace nSdl2Paint::nWindow
     class EventHandler
     {
     public:
-        EventHandler( iRenderable* aRenderable );
+        EventHandler( std::shared_ptr<iUiComponent> aUiComponent );
         virtual ~EventHandler() = default;
 
     public:
         bool RunEventLoop();
 
     private:
-        iRenderable* mRenderable;
+        std::shared_ptr<iUiComponent> mUiComponent;
 
     private:
         void HandleEvent( const SDL_Event* aEvent, bool& aShouldQuit );

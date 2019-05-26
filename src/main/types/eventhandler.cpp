@@ -39,13 +39,17 @@ void EventHandler::HandleEvent( const SDL_Event* aEvent, bool& aShouldQuit )
         }
 
         PointEventArgument lPointArgument( lXMouse, lYMouse );
-
-        int lNewSum = lXMouse + lYMouse;
+        const std::shared_ptr<UiEventContainer> lUiEventContainer = mUiComponent->GetUiEventContainer();
+        const bool lInvokeResult = lUiEventContainer->EventMouseMove.Invoke( &lPointArgument );
+        if ( IS_NOT( lInvokeResult ) )
+        {
+            PRINT_WARNING( "Event invokation failed" );
+        }
     }
 }
 
-EventHandler::EventHandler( iRenderable* aRenderable ) :
-    mRenderable( aRenderable )
+EventHandler::EventHandler( std::shared_ptr<iUiComponent> aUiComponent ) :
+    mUiComponent( aUiComponent )
 {}
 
 bool EventHandler::RunEventLoop()

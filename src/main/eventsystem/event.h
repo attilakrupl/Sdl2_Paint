@@ -27,7 +27,7 @@ namespace nSdl2Paint
         virtual ~Event();
 
     public:
-        inline bool Invoke( const iEventArgument* const aEventArgument );
+        bool Invoke( const iEventArgument* const aEventArgument );
 
         template <typename TYPEEVENTHANDLER>
         inline void Register( TYPEEVENTHANDLER* const aObserver, const bool ( TYPEEVENTHANDLER::*aCallback )( const iEventArgument* const ) );

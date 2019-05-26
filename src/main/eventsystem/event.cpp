@@ -3,8 +3,7 @@
 using namespace nSdl2Paint;
 
 void Event::UnregisterVoid( void * const aObserver, void * const aCallback )
-{
-}
+{}
 
 Event::Event()
 {}
@@ -19,7 +18,7 @@ Event::~Event()
     mEvents.clear();
 }
 
-inline bool nSdl2Paint::Event::Invoke( const iEventArgument * const aEventArgument )
+bool Event::Invoke( const iEventArgument * const aEventArgument )
 {
     mIsInInvoke = true;
 

@@ -33,7 +33,6 @@
 #include "types/interfaces/irenderable.h"
 #include "types/interfaces/iuicomponent.h"
 
-
 #include "types/backgroundtexture.h"
 #include "types/eventhandler.h"
 #include "types/window.h"
