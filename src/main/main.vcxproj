@@ -97,7 +97,6 @@
     <ClInclude Include="base\enums.h" />
     <ClInclude Include="base\macros.h" />
     <ClInclude Include="base\sdlhelper.h" />
-    <ClInclude Include="eventsystem\containers\uieventcontainer.h" />
     <ClInclude Include="eventsystem\event.h" />
     <ClInclude Include="eventsystem\eventcallbackhandler.h" />
     <ClInclude Include="eventsystem\interfaces\ieventargument.h" />
@@ -106,8 +105,10 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="types\backgroundtexture.h" />
     <ClInclude Include="types\eventhandler.h" />
-    <ClInclude Include="types\interfaces\ieventargument.h" />
+    <ClInclude Include="types\events\eventarguments\pointeventargument.h" />
+    <ClInclude Include="types\events\uieventcontainer.h" />
     <ClInclude Include="types\interfaces\irenderable.h" />
+    <ClInclude Include="types\interfaces\iuicomponent.h" />
     <ClInclude Include="types\window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

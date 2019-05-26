@@ -33,6 +33,13 @@ void EventHandler::HandleEvent( const SDL_Event* aEvent, bool& aShouldQuit )
         int lXMouse;
         int lYMouse;
         uint32_t lError = SDL_GetMouseState( &lXMouse, &lYMouse );
+        if ( IS_FAIL( lError ) )
+        {
+            PRINT_ERROR( "Cannot get mouse state" );
+        }
+
+        PointEventArgument lPointArgument( lXMouse, lYMouse );
+
         int lNewSum = lXMouse + lYMouse;
     }
 }

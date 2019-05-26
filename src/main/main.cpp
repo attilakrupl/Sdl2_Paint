@@ -2,8 +2,10 @@
 
 int main( int argc, char** argv )
 {
+    std::shared_ptr<nSdl2Paint::nWindow::UiEventContainer> lUiEventContainer = std::make_shared<nSdl2Paint::nWindow::UiEventContainer>();
+
     nSdl2Paint::nWindow::Window lWindow;
-    if( IS_NOT( lWindow.OnInitialize() ) )
+    if( IS_NOT( lWindow.OnInitialize( lUiEventContainer ) ) )
     {
         printf( "Failed to initialize!\n" );
         return -1;

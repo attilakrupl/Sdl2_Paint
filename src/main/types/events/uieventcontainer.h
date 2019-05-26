@@ -1,6 +1,6 @@
 #pragma once
 
-namespace nSdl2Paint
+namespace nSdl2Paint::nWindow
 {
     class UiEventContainer
     {

@@ -3,6 +3,7 @@
 // STD
 
 #include <list>
+#include <memory>
 
 // SDL2
 
@@ -16,19 +17,22 @@
 #include "base/macros.h"
 #include "base/sdlhelper.h"
 
-// Interfaces
-
-#include "types/interfaces/irenderable.h"
-
 // Event system
 
 #include "eventsystem/interfaces/ieventcallbackhandler.h"
 #include "eventsystem/interfaces/ieventargument.h"
+
 #include "eventsystem/eventcallbackhandler.h"
 #include "eventsystem/event.h"
-#include "eventsystem/containers/uieventcontainer.h"
 
-// 
+// Window Includes
+
+#include "types/events/eventarguments/pointeventargument.h"
+#include "types/events/uieventcontainer.h"
+
+#include "types/interfaces/irenderable.h"
+#include "types/interfaces/iuicomponent.h"
+
 
 #include "types/backgroundtexture.h"
 #include "types/eventhandler.h"

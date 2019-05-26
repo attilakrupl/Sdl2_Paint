@@ -46,12 +46,6 @@
     <ClInclude Include="types\backgroundtexture.h">
       <Filter>types</Filter>
     </ClInclude>
-    <ClInclude Include="types\interfaces\ieventargument.h">
-      <Filter>types\interfaces</Filter>
-    </ClInclude>
-    <ClInclude Include="eventsystem\containers\uieventcontainer.h">
-      <Filter>eventsystem\containers</Filter>
-    </ClInclude>
     <ClInclude Include="eventsystem\event.h">
       <Filter>eventsystem</Filter>
     </ClInclude>
@@ -63,6 +57,15 @@
     </ClInclude>
     <ClInclude Include="eventsystem\interfaces\ieventargument.h">
       <Filter>eventsystem\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="types\events\uieventcontainer.h">
+      <Filter>types\events</Filter>
+    </ClInclude>
+    <ClInclude Include="types\events\eventarguments\pointeventargument.h">
+      <Filter>types\events\eventarguments</Filter>
+    </ClInclude>
+    <ClInclude Include="types\interfaces\iuicomponent.h">
+      <Filter>types\interfaces</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -78,14 +81,14 @@
     <Filter Include="eventsystem">
       <UniqueIdentifier>{56a9cb56-e920-4a23-a8cb-1924a4e9bcfa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="eventsystem\containers">
-      <UniqueIdentifier>{18130974-f3dc-42a5-8cb7-927c9a0dfabf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="eventsystem\eventarguments">
-      <UniqueIdentifier>{54a3b637-5863-4df7-996b-bb69389f1a40}</UniqueIdentifier>
-    </Filter>
     <Filter Include="eventsystem\interfaces">
       <UniqueIdentifier>{a99e4fbd-448a-4fe7-9802-92c249e5a832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="types\events">
+      <UniqueIdentifier>{363d4da9-e66b-4973-a251-b8df5c112dbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="types\events\eventarguments">
+      <UniqueIdentifier>{abe4936a-bf5a-4019-81f6-225dbded2d4d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

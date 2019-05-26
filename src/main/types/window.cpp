@@ -10,12 +10,17 @@ Window::Window()
 
 Window::~Window()
 {
-    delete mUiEventContainer;
-    mUiEventContainer = nullptr;
 }
 
-bool Window::OnInitialize()
+bool Window::OnInitialize( std::shared_ptr<UiEventContainer> aUiEventContainer )
 {
+    if( IS_NOT( aUiEventContainer ) )
+    {
+        return false;
+    }
+
+    mUiEventContainer = aUiEventContainer;
+
     if( IS_FAIL( SDL_Init( SDL_INIT_VIDEO ) ) )
     {
         PRINT_ERROR( SDL_GetError() );
@@ -101,4 +106,9 @@ bool Window::Render()
     SDL_RenderPresent( mRenderer );
 
     return true;
+}
+
+std::shared_ptr<UiEventContainer> nSdl2Paint::nWindow::Window::GetUiEventContainer()
+{
+    return mUiEventContainer;
 }

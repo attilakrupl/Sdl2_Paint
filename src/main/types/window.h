@@ -2,25 +2,28 @@
 
 namespace nSdl2Paint::nWindow
 {
-    class Window : public iRenderable
+    class Window : public iUiComponent
     {
+    private:
+        SDL_Renderer*                     mRenderer;
+        SDL_Window*                       mWindow;
+
+        std::shared_ptr<UiEventContainer> mUiEventContainer;
+
     public:
         Window();
         virtual ~Window();
 
     public:
-        bool OnInitialize();
+        bool OnInitialize( std::shared_ptr<UiEventContainer> aUiEventContainer );
         bool OnDeinitialize();
         void Close();
 
     public:
         bool LoadMedia();
-        bool Render() override;
+        virtual bool Render() override;
 
-    private:
-        SDL_Renderer* mRenderer;
-        SDL_Window*   mWindow;
-
-        UiEventContainer* mUiEventContainer;
+    public:
+        virtual std::shared_ptr<UiEventContainer> GetUiEventContainer() override;
     };
 }
