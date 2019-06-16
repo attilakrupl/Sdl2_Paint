@@ -9,9 +9,6 @@
     <ClCompile Include="eventsystem\eventcallbackhandler.cpp">
       <Filter>eventsystem</Filter>
     </ClCompile>
-    <ClCompile Include="customwidgets\label\label.cpp">
-      <Filter>customwidgets\label</Filter>
-    </ClCompile>
     <ClCompile Include="window\backgroundtexture.cpp">
       <Filter>window</Filter>
     </ClCompile>
@@ -20,6 +17,9 @@
     </ClCompile>
     <ClCompile Include="window\window.cpp">
       <Filter>window</Filter>
+    </ClCompile>
+    <ClCompile Include="customwidgets\sdl2label\sdl2label.cpp">
+      <Filter>customwidgets\sdl2label</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -49,9 +49,6 @@
     <ClInclude Include="eventsystem\interfaces\ieventargument.h">
       <Filter>eventsystem\interfaces</Filter>
     </ClInclude>
-    <ClInclude Include="customwidgets\label\label.h">
-      <Filter>customwidgets\label</Filter>
-    </ClInclude>
     <ClInclude Include="window\backgroundtexture.h">
       <Filter>window</Filter>
     </ClInclude>
@@ -73,6 +70,9 @@
     <ClInclude Include="window\events\eventarguments\pointeventargument.h">
       <Filter>window\events\eventarguments</Filter>
     </ClInclude>
+    <ClInclude Include="customwidgets\sdl2label\sdl2label.h">
+      <Filter>customwidgets\sdl2label</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="base">
@@ -87,9 +87,6 @@
     <Filter Include="customwidgets">
       <UniqueIdentifier>{51ac5371-1725-41e9-936e-6123515350e1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="customwidgets\label">
-      <UniqueIdentifier>{1a5db56f-506b-4bfd-80a1-f65c874c9d62}</UniqueIdentifier>
-    </Filter>
     <Filter Include="window">
       <UniqueIdentifier>{519e0df9-dafc-4239-a549-9606228fe95b}</UniqueIdentifier>
     </Filter>
@@ -101,6 +98,18 @@
     </Filter>
     <Filter Include="window\events\eventarguments">
       <UniqueIdentifier>{abe4936a-bf5a-4019-81f6-225dbded2d4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{235e41d8-e16c-4e9f-a66e-796e4481223f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\sdl">
+      <UniqueIdentifier>{01b5fa16-1961-4adf-b952-277cd8489f89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application\mainapplication">
+      <UniqueIdentifier>{f56b2590-ea8b-4c5d-991f-c5dc8e557426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="customwidgets\sdl2label">
+      <UniqueIdentifier>{1a5db56f-506b-4bfd-80a1-f65c874c9d62}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

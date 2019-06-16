@@ -2,6 +2,7 @@
 
 // STD
 
+#include <iostream>
 #include <list>
 #include <memory>
 
@@ -9,6 +10,7 @@
 
 #include <SDL.h>
 #include <SDL_image.h>
+#include <SDL_ttf.h>
 
 // Base
 
@@ -27,7 +29,7 @@
 
 // Custom widgets
 
-#include "customwidgets/label/label.h"
+#include "customwidgets/sdl2label/sdl2label.h"
 
 // Window Includes
 

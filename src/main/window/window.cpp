@@ -1,3 +1,10 @@
+/*!
+ * \file   window.cpp
+ * \author Attila Krüpl
+ * \date   2019/06/16
+ * \info   www.krupl.com
+ */
+
 #include "stdafx.h"
 
 using namespace nSdl2Paint::nWindow;
@@ -27,6 +34,12 @@ bool Window::OnInitialize( std::shared_ptr<UiEventContainer> aUiEventContainer )
         return false;
     }
 
+    if( IS_FAIL( TTF_Init() ) )
+    {
+        PRINT_ERROR( TTF_GetError() );
+        return false;
+    }
+
     if( IS_NOT( SDL_SetHint( SDL_HINT_RENDER_SCALE_QUALITY, "1" ) ) )
     {
         PRINT_WARNING( "Linear texture filtering not enabled!" );
@@ -43,6 +56,8 @@ bool Window::OnInitialize( std::shared_ptr<UiEventContainer> aUiEventContainer )
         PRINT_ERROR( SDL_GetError() );
         return false;
     }
+
+    PrintVideoInformation();
 
     mRenderer = SDL_CreateRenderer( mWindow
                                   , -1
@@ -64,6 +79,7 @@ bool Window::OnInitialize( std::shared_ptr<UiEventContainer> aUiEventContainer )
 
 bool Window::OnDeinitialize()
 {
+    TTF_Quit();
     SDL_Quit();
 
     return true;
@@ -108,7 +124,31 @@ bool Window::Render()
     return true;
 }
 
-std::shared_ptr<UiEventContainer> nSdl2Paint::nWindow::Window::GetUiEventContainer()
+std::shared_ptr<UiEventContainer> Window::GetUiEventContainer()
 {
     return mUiEventContainer;
+}
+
+void Window::PrintVideoInformation()
+{
+    if ( mWindow )
+    {
+        const int   lNumVideoDrives         = SDL_GetNumVideoDrivers();
+        std::cout << "Number of video drives: " << lNumVideoDrives << std::endl;
+        for ( size_t i = 0; i < lNumVideoDrives; ++i )
+        {
+            const char* lVideoDriver = SDL_GetVideoDriver( i );
+            std::cout << "Video driver number " << ( i + 1 ) << ": " << lVideoDriver << std::endl;
+        }
+        const char* lCurrentVideoDriverName = SDL_GetCurrentVideoDriver();
+        std::cout << "Current video driver: " << lCurrentVideoDriverName << std::endl;
+
+        const int   lNumVideoDisplays       = SDL_GetNumVideoDisplays();
+        std::cout << "Number of video displays: " << lNumVideoDisplays << std::endl;
+        for ( size_t i = 0; i < lNumVideoDisplays; ++i )
+        {
+            const char* lDisplay = SDL_GetDisplayName( i );
+            std::cout << "Display number " << ( i + 1 ) << ": " << lDisplay << std::endl;
+        }
+    }
 }

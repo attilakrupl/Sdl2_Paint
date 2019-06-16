@@ -14,19 +14,19 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{E1330E06-3CDD-4CF3-9D23-C0C209717964}</ProjectGuid>
     <RootNamespace>main</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -61,7 +61,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -81,7 +81,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="customwidgets\label\label.cpp" />
+    <ClCompile Include="customwidgets\sdl2label\sdl2label.cpp" />
     <ClCompile Include="eventsystem\event.cpp" />
     <ClCompile Include="eventsystem\eventcallbackhandler.cpp" />
     <ClCompile Include="main.cpp" />
@@ -98,7 +98,7 @@
     <ClInclude Include="base\enums.h" />
     <ClInclude Include="base\macros.h" />
     <ClInclude Include="base\sdlhelper.h" />
-    <ClInclude Include="customwidgets\label\label.h" />
+    <ClInclude Include="customwidgets\sdl2label\sdl2label.h" />
     <ClInclude Include="eventsystem\event.h" />
     <ClInclude Include="eventsystem\eventcallbackhandler.h" />
     <ClInclude Include="eventsystem\interfaces\ieventargument.h" />
