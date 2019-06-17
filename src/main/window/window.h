@@ -81,5 +81,12 @@ namespace nSdl2Paint::nWindow
          * \return the Ui Event Container
          */
         virtual std::shared_ptr<UiEventContainer> GetUiEventContainer() override;
+
+        /*!
+         * Returns the rect of the ui component
+         * 
+         * \return  the rect of the ui component
+         */
+        virtual SDL_Rect GetRect() override;
     };
 }

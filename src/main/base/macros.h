@@ -6,3 +6,4 @@
 #define IS_NULL( _aPointer ) ( ( _aPointer ) == nullptr )
 #define PRINT_ERROR( _aError ) printf( "File: %s,\n Line: %d,\n Error: %s\n\n"  , __FILE__, __LINE__, ( _aError   ) )
 #define PRINT_WARNING( _aWarning ) printf( "File: %s,\n Line: %d,\n Warning: %s\n\n", __FILE__, __LINE__, ( _aWarning ) )
+#define ADDRESS_OF( _aObject ) ( &( _aObject ) )

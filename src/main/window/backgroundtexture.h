@@ -1,3 +1,10 @@
+/*!
+ * \file   backgroundtexture.h
+ * \author Attila Krüpl
+ * \date   2019/06/17
+ * \info   www.krupl.com
+ */
+
 #pragma once
 
 namespace nSdl2Paint::nWindow

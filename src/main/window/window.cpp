@@ -135,7 +135,7 @@ void Window::PrintVideoInformation()
     {
         const int   lNumVideoDrives         = SDL_GetNumVideoDrivers();
         std::cout << "Number of video drives: " << lNumVideoDrives << std::endl;
-        for ( size_t i = 0; i < lNumVideoDrives; ++i )
+        for ( int i = 0; i < lNumVideoDrives; ++i )
         {
             const char* lVideoDriver = SDL_GetVideoDriver( i );
             std::cout << "Video driver number " << ( i + 1 ) << ": " << lVideoDriver << std::endl;
@@ -145,10 +145,33 @@ void Window::PrintVideoInformation()
 
         const int   lNumVideoDisplays       = SDL_GetNumVideoDisplays();
         std::cout << "Number of video displays: " << lNumVideoDisplays << std::endl;
-        for ( size_t i = 0; i < lNumVideoDisplays; ++i )
+        for ( int i = 0; i < lNumVideoDisplays; ++i )
         {
             const char* lDisplay = SDL_GetDisplayName( i );
             std::cout << "Display number " << ( i + 1 ) << ": " << lDisplay << std::endl;
+
+            SDL_Rect lRect{};
+            const int lResult = SDL_GetDisplayBounds( i, ADDRESS_OF( lRect ) );
+            if ( IS_SUCCESS( lResult ) )
+            {
+                std::cout << "Position (x, y): ("
+                          << lRect.x
+                          << ", "
+                          << lRect.y
+                          << "); Size (width, height): ("
+                          << lRect.w
+                          << ", "
+                          << lRect.h
+                          << ")"
+                          << std::endl;
+            }
+            const int lNumberOfDisplayModes = SDL_GetNumDisplayModes( i );
+            std::cout << "Number of display modes: " << lNumVideoDisplays << std::endl;
         }
     }
+}
+
+SDL_Rect Window::GetRect()
+{
+    return SDL_Rect{};
 }
