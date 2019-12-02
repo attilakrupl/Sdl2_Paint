@@ -3,8 +3,7 @@
 int main( int argc, char** argv )
 {
     std::shared_ptr<nSdl2Paint::nWindow::UiEventContainer> lUiEventContainer = std::make_shared<nSdl2Paint::nWindow::UiEventContainer>();
-
-    std::shared_ptr<nSdl2Paint::nWindow::Window> lWindow = std::make_shared<nSdl2Paint::nWindow::Window>();
+    std::shared_ptr<nSdl2Paint::nWindow::Window>           lWindow           = std::make_shared<nSdl2Paint::nWindow::Window>();
 
     if( IS_NOT( lWindow->OnInitialize( lUiEventContainer ) ) )
     {

@@ -63,6 +63,7 @@ CMakeLists.txt.user*
 [Bb]in/
 [Oo]bj/
 [Ll]ib/
+packages/
 
 # mstest test results
 TestResults
