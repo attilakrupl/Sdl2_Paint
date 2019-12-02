@@ -1,3 +1,9 @@
+/*!
+ * \file   enums.h
+ * \author Attila Krüpl dr.
+ * \date   02/12/2019
+ */
+
 namespace nSdl2Paint::nWindow
 {
     enum class KeyPressSurfaces

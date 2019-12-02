@@ -1,3 +1,9 @@
+/*!
+ * \file   macros.h
+ * \author Attila Krüpl dr.
+ * \date   02/12/2019
+ */
+
 #include <stdio.h>
 
 #define IS_NOT( _aBool ) ( !( _aBool ) )

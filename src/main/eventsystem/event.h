@@ -1,3 +1,9 @@
+/*!
+ * \file   event.h
+ * \author Attila Krüpl dr.
+ * \date   02/12/2019
+ */
+
 #pragma once
 
 namespace nSdl2Paint

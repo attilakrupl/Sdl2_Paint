@@ -1,10 +1,9 @@
 /*!
- * \file   label.cpp
- * \author Attila Krüpl
- * \date   2019/06/16
- * \info   www.krupl.com
+ * \file   sdl2label.cpp
+ * \author Attila Krüpl dr.
+ * \date   02/12/2019
  */
- 
+
 #include "stdafx.h"
 
 using namespace nSdl2Paint::nCustomWidgets;

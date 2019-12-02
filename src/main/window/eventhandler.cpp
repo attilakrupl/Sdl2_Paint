@@ -1,18 +1,17 @@
 /*!
  * \file   eventhandler.cpp
- * \author Attila Krüpl
- * \date   2019/06/17
- * \info   www.krupl.com
+ * \author Attila Krüpl dr.
+ * \date   02/12/2019
  */
 
 #include "stdafx.h"
 
 using namespace nSdl2Paint::nWindow;
 
-static Uint8 gColorComponentMAX   = 255;
-static Uint8 gGREENMAX = 255;
-static Uint8 gBLUEMAX  = 255;
-static Uint8 gALPHAMAX = 255;
+static Uint8 gColorComponentMAX = 255;
+static Uint8 gGREENMAX          = 255;
+static Uint8 gBLUEMAX           = 255;
+static Uint8 gALPHAMAX          = 255;
 
 void EventHandler::HandleEvent( const SDL_Event* aEvent, bool& aShouldQuit )
 {

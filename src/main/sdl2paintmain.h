@@ -1,3 +1,9 @@
+/*!
+ * \file   sdl2paintmain.h
+ * \author Attila Krüpl dr.
+ * \date   02/12/2019
+ */
+
 #pragma once
 
 // STD

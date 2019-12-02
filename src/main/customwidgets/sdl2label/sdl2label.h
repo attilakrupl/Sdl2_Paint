@@ -1,9 +1,15 @@
+/*!
+ * \file   sdl2label.h
+ * \author Attila Krüpl dr.
+ * \date   02/12/2019
+ */
+
 #pragma once
 
 namespace nSdl2Paint::nCustomWidgets
 {
     /*!
-     * \class  SDL2_Label
+     * \class  SDL2Label
      * \brief  SDL2 based Label Widget
      */
     class SDL2Label
